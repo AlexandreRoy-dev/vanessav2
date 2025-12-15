@@ -26,768 +26,649 @@
 <body class="antialiased bg-body text-body font-body">
 <div class="">
 
-
-              <!--Header + hero-->
-      <section
-  x-data="{ mobileNavOpen: false }"
-  class="relative"
-  style="background-color:#F7F5EE;">
-
-<div
-  class="absolute z-10 hidden lg:block left-0 top-0 max-w-md w-full h-full"
-  style="background: linear-gradient(
-    to bottom,
-    #0c2749 0%,
-    rgba(12,39,73,0.95) 60%,
-    rgba(247,245,238,0.6) 85%,
-    #F7F5EE 100%
-  );">
-</div>
-
-
-<!-- header -->
-
-<div class="container mx-auto overflow-hidden">
-  <div class="relative z-20 flex items-center justify-between px-4 py-5 bg-transparent">
-    <div class="w-auto">
-      <div class="flex flex-wrap items-center">
-        <div class="w-auto mr-14">
-          <a href="index.html">
-            <!-- Desktop logo -->
-            <img
-              class="hidden lg:block h-14 w-auto"
-              src="flaro-assets/images/remax.webp"
-              alt="logo remax">
-
-            <!-- Mobile logo -->
-            <img
-              class="block lg:hidden h-12 w-auto"
-              src="flaro-assets/images/remaxdark.webp"
-              alt="logo remax mobile">
-          </a>
-        </div>
-
-        <div class="w-auto hidden lg:block">
-          <ul class="flex items-center mr-16">
-            <li class="mr-9 font-medium hover:text-gray-700">
-              <a href="index.html">Accueil</a>
-            </li>
-            <li class="mr-9 font-medium hover:text-gray-700">
-              <a href="#services">Services</a>
-            </li>
-            <li class="mr-9 font-medium hover:text-gray-700">
-              <a href="#about">À propos</a>
-            </li>
-            <li class="font-medium hover:text-gray-700">
-              <a href="#guides">Guides gratuits</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="w-auto">
-      <div class="flex flex-wrap items-center">
-        <div class="w-auto hidden mr-5 lg:block">
-          <button
-            class="py-3 px-5 w-full hover:text-gray-700 font-medium rounded-xl bg-transparent transition ease-in-out duration-200"
-            type="button">
-            Propriétés
-          </button>
-        </div>
-
-        <div class="w-auto hidden lg:block">
-          <button
-            class="py-3 px-5 w-full font-semibold text-white rounded-xl transition ease-in-out duration-200 focus:ring"
-            style="
-              background-color:#AA1120;
-              border:1px solid #AA1120;
-              --tw-ring-color: rgba(170,17,32,0.35);
-            "
-            onmouseover="this.style.backgroundColor='#8f0e1b'"
-            onmouseout="this.style.backgroundColor='#AA1120'"
-            type="button">
-            Évaluation gratuite
-          </button>
-        </div>
-
-        <!-- Hamburger -->
-        <div class="w-auto lg:hidden">
-          <button x-on:click="mobileNavOpen = !mobileNavOpen">
-            <svg
-              style="color:#AA1120"
-              width="51"
-              height="51"
-              viewBox="0 0 56 56"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect width="56" height="56" rx="28" fill="currentColor"></rect>
-              <path
-                d="M37 32H19M37 24H19"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-              </path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile menu -->
-  <div
-    :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}"
-    class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
+  <!--Header + hero-->
+  <section
+    x-data="{ mobileNavOpen: false }"
+    class="relative"
+    style="background-color:#F7F5EE;">
 
     <div
-      x-on:click="mobileNavOpen = !mobileNavOpen"
-      class="fixed inset-0 bg-gray-800 opacity-80">
+      class="absolute z-10 hidden lg:block left-0 top-0 max-w-md w-full h-full"
+      style="background: linear-gradient(
+        to bottom,
+        #0c2749 0%,
+        rgba(12,39,73,0.95) 60%,
+        rgba(247,245,238,0.6) 85%,
+        #F7F5EE 100%
+      );">
     </div>
 
-    <nav class="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
-      <div class="flex flex-wrap justify-between h-full">
-
-        <div class="w-full">
-          <div class="flex items-center justify-between -m-2">
-            <div class="w-auto p-2">
-              <a class="inline-block" href="#">
+    <!-- header -->
+    <div class="container mx-auto overflow-hidden">
+      <div class="relative z-20 flex items-center justify-between px-4 py-5 bg-transparent">
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto mr-14">
+              <a href="index.html">
+                <!-- Desktop logo -->
                 <img
-                  class="h-12 w-auto"
-                  src="flaro-assets/images/remaxdark.webp"
+                  class="hidden lg:block h-14 w-auto"
+                  src="flaro-assets/images/remax.webp"
                   alt="logo remax">
+
+                <!-- Mobile logo -->
+                <img
+                  class="block lg:hidden h-12 w-auto"
+                  src="flaro-assets/images/remaxdark.webp"
+                  alt="logo remax mobile">
               </a>
             </div>
-            <div class="w-auto p-2">
-              <button x-on:click="mobileNavOpen = !mobileNavOpen">
+
+            <div class="w-auto hidden lg:block">
+              <ul class="flex items-center mr-16">
+                <li class="mr-9 font-medium hover:text-gray-700">
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li class="mr-9 font-medium hover:text-gray-700">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="mr-9 font-medium hover:text-gray-700">
+                  <a href="#about">À propos</a>
+                </li>
+                <li class="font-medium hover:text-gray-700">
+                  <a href="#guides">Guides gratuits</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+
+            <!-- DESKTOP CTA: Propriétés (FIXED) -->
+            <div class="w-auto hidden mr-5 lg:block">
+              <a
+                href="https://www.centris.ca/fr/courtier-immobilier~vanessa-lemieux~re-max-1er-choix-inc.-lebourgneuf/j5026?uc=1"
+                class="block py-3 px-5 w-full hover:text-gray-700 font-medium rounded-xl bg-transparent transition ease-in-out duration-200">
+                Propriétés
+              </a>
+            </div>
+
+            <!-- DESKTOP CTA: Évaluation gratuite (FIXED) -->
+            <div class="w-auto hidden lg:block">
+              <a
+                href="#contact"
+                class="block text-center py-3 px-5 w-full font-semibold text-white rounded-xl transition ease-in-out duration-200 focus:ring"
+                style="
+                  background-color:#AA1120;
+                  border:1px solid #AA1120;
+                  --tw-ring-color: rgba(170,17,32,0.35);
+                ">
+                Évaluation gratuite
+              </a>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="w-auto lg:hidden">
+              <button x-on:click="mobileNavOpen = !mobileNavOpen" type="button">
                 <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
+                  style="color:#AA1120"
+                  width="51"
+                  height="51"
+                  viewBox="0 0 56 56"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
+                  <rect width="56" height="56" rx="28" fill="currentColor"></rect>
                   <path
-                    d="M6 18L18 6M6 6L18 18"
-                    stroke="#111827"
-                    stroke-width="2"
+                    d="M37 32H19M37 24H19"
+                    stroke="white"
+                    stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round">
                   </path>
                 </svg>
               </button>
             </div>
+
           </div>
         </div>
+      </div>
 
-        <div class="flex flex-col justify-center py-16 w-full">
-          <ul>
-            <li class="mb-6 font-medium hover:text-gray-700">
-              <a href="index.html">Accueil</a>
-            </li>
-            <li class="mb-6 font-medium hover:text-gray-700">
-              <a href="#services">Services</a>
-            </li>
-            <li class="mb-6 font-medium hover:text-gray-700">
-              <a href="#about">À propos</a>
-            </li>
-            <li class="font-medium hover:text-gray-700">
-              <a href="#guides">Guides gratuits</a>
-            </li>
-          </ul>
+      <!-- Mobile menu -->
+      <div
+        :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}"
+        class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
+
+        <div
+          x-on:click="mobileNavOpen = !mobileNavOpen"
+          class="fixed inset-0 bg-gray-800 opacity-80">
         </div>
 
-        <div class="flex flex-col justify-end w-full pb-8">
-          <div class="flex flex-wrap">
-            <div class="w-full mb-3">
-              <button
-                class="py-3 px-5 w-full font-medium rounded-xl bg-transparent hover:text-gray-700 transition ease-in-out duration-200"
-                type="button">
-                Propriétés
-              </button>
-            </div>
+        <nav class="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
+          <div class="flex flex-wrap justify-between h-full">
+
             <div class="w-full">
-              <button
-                class="py-3 px-5 w-full font-semibold border rounded-xl bg-white hover:bg-gray-50 transition ease-in-out duration-200"
-                type="button">
-                Évaluation gratuite
-              </button>
+              <div class="flex items-center justify-between -m-2">
+                <div class="w-auto p-2">
+                  <a class="inline-block" href="#">
+                    <img
+                      class="h-12 w-auto"
+                      src="flaro-assets/images/remaxdark.webp"
+                      alt="logo remax">
+                  </a>
+                </div>
+                <div class="w-auto p-2">
+                  <button x-on:click="mobileNavOpen = !mobileNavOpen" type="button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6 18L18 6M6 6L18 18"
+                        stroke="#111827"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-      </div>
-    </nav>
-  </div>
-</div>
-
-
-
-
-        <!--hero-->
- <div class="relative z-20 overflow-hidden pt-12 pb-28">
-  <div class="container px-4 mx-auto">
-    <div class="flex flex-wrap xl:items-center -m-8">
-      
-      <div class="w-full md:w-1/2 xl:w-2/5 p-8 xl:p-12">
-        <div class="relative">
-          <div class="overflow-hidden rounded-lg">
-            <img class="w-full md:w-auto rounded-lg transform hover:scale-105 transition ease-in-out duration-1000 object-cover" src="images/vanessapro.png" alt="">
-          </div>
-          <div class="p-8 absolute bottom-0 left-0 w-full">
-          </div>
-        </div>
-      </div>
-
-      <div class="w-full md:w-1/2 xl:w-3/5 p-8 xl:p-12">
-        <div class="xl:max-w-2xl">
-          <h1 class="mb-7 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">
-            Trouvez votre propriété idéale avec <br> Vanessa Lemieux
-          </h1>
-
-          <p class="mb-12 text-lg text-gray-900 font-medium md:max-w-md">
-            Un accompagnement professionnel, humain et stratégique pour acheter, vendre ou investir dans la région de Québec.
-          </p>
-
-          <!-- CTA BUTTONS -->
-         <div class="flex items-center">
-  
- <button
-  style="margin-right:16px; background-color:#0c2749;"
-  class="py-3 px-6 text-sm text-white font-semibold rounded-lg
-         transition ease-in-out duration-200
-         focus:ring"
-  onmouseover="this.style.backgroundColor='#091f39'"
-  onmouseout="this.style.backgroundColor='#0c2749'"
-  type="button">
-  Évaluation gratuite
-</button>
-
-
-  <button
-    class="py-3 px-6 text-sm font-semibold rounded-lg border-2 border-black hover:bg-gray-50 transition ease-in-out duration-200"
-    type="button">
-    Voir les propriétés
-  </button>
-
-</div>
-
-
-          <div class="flex flex-wrap items-center -m-16">
-            <div class="w-auto">
-              <div class="h-16 w-px bg-gray-200"></div>
+            <div class="flex flex-col justify-center py-16 w-full">
+              <ul>
+                <li class="mb-6 font-medium hover:text-gray-700">
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li class="mb-6 font-medium hover:text-gray-700">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="mb-6 font-medium hover:text-gray-700">
+                  <a href="#about">À propos</a>
+                </li>
+                <li class="font-medium hover:text-gray-700">
+                  <a href="#guides">Guides gratuits</a>
+                </li>
+              </ul>
             </div>
+
+            <!-- Mobile menu bottom CTAs (already links) -->
+            <div class="flex flex-col justify-end w-full pb-8">
+              <div class="flex flex-wrap">
+
+                <div class="w-full mb-3">
+                  <a
+                    href="https://www.centris.ca/fr/courtier-immobilier~vanessa-lemieux~re-max-1er-choix-inc.-lebourgneuf/j5026?uc=1"
+                    class="block text-center py-3 px-5 w-full font-medium rounded-xl
+                           bg-transparent hover:text-gray-700
+                           transition ease-in-out duration-200">
+                    Propriétés
+                  </a>
+                </div>
+
+                <div class="w-full">
+                  <a
+                    href="#contact"
+                    class="block text-center py-3 px-5 w-full font-semibold border rounded-xl
+                           bg-white hover:bg-gray-50
+                           transition ease-in-out duration-200">
+                    Évaluation gratuite
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
           </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-</section>
-
-
-
-
-                   <!--Services-->
-<section
-  class="relative pt-28 pb-36 overflow-hidden"
-  id="services"
-  style="background-color:#F7F5EE;">
-
-
-
-
-
-
-  <div class="relative z-20 container px-4 mx-auto">
-
-    <!-- TITLE -->
-    <div class="mb-20 flex justify-center">
-      <div class="p-8 text-center">
-        <h2
-          class="text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight"
-          style="color:#0c2749;">
-          Mes Services
-        </h2>
-
-        <p
-          class="mt-4 text-lg font-light leading-relaxed mx-auto max-w-2xl"
-          style="color:#0c2749;">
-          Un accompagnement immobilier complet et personnalisé pour vous guider à
-          chaque étape de votre projet.
-        </p>
+        </nav>
       </div>
     </div>
 
-    <!-- CARDS -->
-    <div class="flex flex-wrap -m-3">
+    <!--hero-->
+    <div class="relative z-20 overflow-hidden pt-12 pb-28">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap xl:items-center -m-8">
 
-      <!-- VENTE -->
-      <div class="w-full md:w-1/3 p-3">
-        <div
-          class="relative h-full rounded-3xl overflow-hidden border"
-          style="border-color:rgba(12,39,73,0.15);">
-
-          <img
-            class="h-full md:w-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
-            src="flaro-assets/images/vente.webp"
-            alt="Service de vente immobilière à Québec">
-
-          <div class="absolute bottom-0 left-0 w-full px-11 pb-10">
-            <div
-              class="px-8 py-4 rounded-xl shadow-5xl text-center"
-              style="background-color:#AA1120;">
-              <h3 class="text-lg text-white font-semibold">
-                Vente
-              </h3>
+          <div class="w-full md:w-1/2 xl:w-2/5 p-8 xl:p-12">
+            <div class="relative">
+              <div class="overflow-hidden rounded-lg">
+                <img class="w-full md:w-auto rounded-lg transform hover:scale-105 transition ease-in-out duration-1000 object-cover" src="images/vanessapro.png" alt="">
+              </div>
+              <div class="p-8 absolute bottom-0 left-0 w-full"></div>
             </div>
           </div>
 
-        </div>
-      </div>
+          <div class="w-full md:w-1/2 xl:w-3/5 p-8 xl:p-12">
+            <div class="xl:max-w-2xl">
+              <h1 class="mb-7 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">
+                Trouvez votre propriété idéale avec <br> Vanessa Lemieux
+              </h1>
 
-      <!-- ACHAT -->
-      <div class="w-full md:w-1/3 p-3">
-        <div
-          class="relative h-full rounded-3xl overflow-hidden border"
-          style="border-color:rgba(12,39,73,0.15);">
+              <p class="mb-12 text-lg text-gray-900 font-medium md:max-w-md">
+                Un accompagnement professionnel, humain et stratégique pour acheter, vendre ou investir dans la région de Québec.
+              </p>
 
-          <img
-            class="h-full md:w-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
-            src="flaro-assets/images/achat.webp"
-            alt="Service d’achat immobilier à Québec">
+              <!-- CTA BUTTONS (FIXED to links) -->
+              <div class="flex items-center">
 
-          <div class="absolute bottom-0 left-0 w-full px-11 pb-10">
-            <div
-              class="px-8 py-4 rounded-xl shadow-5xl text-center"
-              style="background-color:#F7F5EE;">
-              <h3
-                class="text-lg font-semibold"
-                style="color:#0c2749;">
-                Achat
-              </h3>
-            </div>
-          </div>
+                <a
+                  href="#contact"
+                  style="margin-right:16px; background-color:#0c2749;"
+                  class="inline-block py-3 px-6 text-sm text-white font-semibold rounded-lg
+                         transition ease-in-out duration-200
+                         focus:ring"
+                  onmouseover="this.style.backgroundColor='#091f39'"
+                  onmouseout="this.style.backgroundColor='#0c2749'">
+                  Évaluation gratuite
+                </a>
 
-        </div>
-      </div>
+                <a
+                  href="https://www.centris.ca/fr/courtier-immobilier~vanessa-lemieux~re-max-1er-choix-inc.-lebourgneuf/j5026?uc=1"
+                  class="inline-block py-3 px-6 text-sm font-semibold rounded-lg border-2 border-black hover:bg-gray-50 transition ease-in-out duration-200">
+                  Voir les propriétés
+                </a>
 
-      <!-- ÉVALUATION -->
-      <div class="w-full md:w-1/3 p-3">
-        <div
-          class="relative h-full rounded-3xl overflow-hidden border"
-          style="border-color:rgba(12,39,73,0.15);">
-
-          <img
-            class="h-full md:w-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
-            src="flaro-assets/images/evaluation.webp"
-            alt="Évaluation gratuite de propriété à Québec">
-
-          <div class="absolute bottom-0 left-0 w-full px-11 pb-10">
-            <div
-              class="px-8 py-4 rounded-xl shadow-5xl text-center"
-              style="background-color:#0c2749;">
-              <h3 class="text-lg text-white font-semibold">
-                Évaluation gratuite
-              </h3>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-              <!--Guides-->    
-<section class="relative pt-32 pb-24 bg-white overflow-hidden" id="guides" style="background-color: #0c2749;">
-  <img
-    class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-    src="./flaro-assets/images/newsletter/gradient.svg"
-    alt=""
-  >
-
-  <div class="relative z-10 container px-4 mx-auto">
-    <div class="text-center max-w-2xl mx-auto">
-
-      <!-- Label -->
-      <p class="mb-5 text-sm text-indigo-600 font-semibold uppercase tracking-px" style="color: #F7F5EE;">
-        Guides
-      </p>
-
-      <!-- Title -->
-      <h2 class="mb-14 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight" style="color: #F7F5EE;">
-        Téléchargez mes guides gratuitement !
-      </h2>
-
-      <!-- Buttons -->
-      <div class="flex flex-col space-y-6 md:max-w-md mx-auto">
-
-        <!-- Bouton principal -->
- <a
-  href="assets/pdf/guide-vendeur.pdf"
-  target="_blank"
-  rel="noopener"
-  class="py-4 px-6 w-full inline-flex items-center justify-center gap-4
-         font-semibold rounded-xl border-2 border-indigo-600
-         transition ease-in-out duration-200"
-  style="color:#F7F5EE; background-color:#AA1120;"
->
-  Guide du vendeur
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-      d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
-  </svg>
-</a>
-
-<br>
-
-
-        <!-- Bouton light -->
-      <a href="./assets/pdf/guide-acheteur.pdf">  <button
-
-        style="color: #F7F5EE;"
-          class="py-4 px-6 w-full inline-flex items-center justify-center gap-4
-                 font-semibold rounded-xl border-2 border-indigo-600
-                 text-indigo-600 hover:bg-indigo-50
-                 transition ease-in-out duration-200"
-          type="button">
-          Guide de l'acheteur
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
-          </svg>
-        </button>
-</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-                <!--à propos--> 
-<section class="py-32 bg-white overflow-hidden" id="about" style="background-color: #F7F5EE;">
-  <div class="container px-4 mx-auto">
-    <div class="flex flex-wrap max-w-7xl mx-auto -m-8">
-      <div class="w-full md:w-1/2 p-8">
-        <div class="md:max-w-md">
-          <h2 class="mb-8 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">
-            À propos
-          </h2>
-          <p class="text-lg text-gray-600 font-medium leading-normal" >
-  Courtier immobilier résidentiel, j’accompagne mes clients avec rigueur, transparence et engagement dans leurs projets d’achat, de vente ou d’investissement immobilier à Québec et dans les environs.
-  <br><br>
-  Chaque projet immobilier est unique. C’est pourquoi je prends le temps de bien comprendre votre situation, vos objectifs et vos priorités afin de vous offrir un accompagnement réellement adapté à vos besoins.
-
-
-  <br><br>
-  Mon approche repose sur la disponibilité, la communication et la confiance. Je vous guide à chaque étape du processus, en vous fournissant des conseils clairs et des informations pertinentes pour vous permettre de prendre des décisions éclairées.
-
-</p>
-
-        </div>
-      </div>
-
-      <div class="w-full md:w-1/2 p-8">
-        <div class="relative max-w-md mx-auto overflow-hidden transform hover:-translate-y-4 transition ease-in-out duration-1000 rounded-2xl">
-          <img class="object-cover h-full w-full" src="flaro-assets/images/vanessaabout.webp" alt="">
-          <div class="absolute bottom-0 p-6 flex flex-col justify-end h-full">
-            <div class="flex flex-wrap items-end overflow-y-auto -m-3">
-              <div class="w-full p-3">
-                
               </div>
 
-              <div class="w-full p-3">
-                <div class="p-7 bg-white bg-opacity-20 rounded-xl" style="backdrop-filter: blur(20px);">
-                  <div class="flex flex-wrap -m-2">
-                    <div class="w-auto p-2">
-                     
-<p class="text-lg text-white font-semibold leading-normal">
-  Toujours disponible pour vous accompagner, répondre à vos questions et vous guider à chaque étape.
-</p>
+              <div class="flex flex-wrap items-center -m-16">
+                <div class="w-auto">
+                  <div class="h-16 w-px bg-gray-200"></div>
+                </div>
+              </div>
 
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Services-->
+  <section class="relative pt-28 pb-36 overflow-hidden" id="services" style="background-color:#F7F5EE;">
+
+    <div class="relative z-20 container px-4 mx-auto">
+
+      <!-- TITLE -->
+      <div class="mb-20 flex justify-center">
+        <div class="p-8 text-center">
+          <h2 class="text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight" style="color:#0c2749;">Mes Services</h2>
+          <p class="mt-4 text-lg font-light leading-relaxed mx-auto max-w-2xl" style="color:#0c2749;">
+            Un accompagnement immobilier complet et personnalisé pour vous guider à
+            chaque étape de votre projet.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARDS -->
+      <div class="flex flex-wrap -m-3">
+
+        <!-- VENTE -->
+        <div class="w-full md:w-1/3 p-3">
+          <div class="relative h-full rounded-3xl overflow-hidden border" style="border-color:rgba(12,39,73,0.15);">
+            <img class="h-full md:w-full object-cover transform hover:scale-105 transition ease-in-out duration-1000" src="flaro-assets/images/vente.webp" alt="Service de vente immobilière à Québec">
+            <div class="absolute bottom-0 left-0 w-full px-11 pb-10">
+              <div class="px-8 py-4 rounded-xl shadow-5xl text-center" style="background-color:#AA1120;">
+                <h3 class="text-lg text-white font-semibold">Vente</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACHAT -->
+        <div class="w-full md:w-1/3 p-3">
+          <div class="relative h-full rounded-3xl overflow-hidden border" style="border-color:rgba(12,39,73,0.15);">
+            <img class="h-full md:w-full object-cover transform hover:scale-105 transition ease-in-out duration-1000" src="flaro-assets/images/achat.webp" alt="Service d’achat immobilier à Québec">
+            <div class="absolute bottom-0 left-0 w-full px-11 pb-10">
+              <div class="px-8 py-4 rounded-xl shadow-5xl text-center" style="background-color:#F7F5EE;">
+                <h3 class="text-lg font-semibold" style="color:#0c2749;">Achat</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ÉVALUATION -->
+        <div class="w-full md:w-1/3 p-3">
+          <div class="relative h-full rounded-3xl overflow-hidden border" style="border-color:rgba(12,39,73,0.15);">
+            <img class="h-full md:w-full object-cover transform hover:scale-105 transition ease-in-out duration-1000" src="flaro-assets/images/evaluation.webp" alt="Évaluation gratuite de propriété à Québec">
+            <div class="absolute bottom-0 left-0 w-full px-11 pb-10">
+              <div class="px-8 py-4 rounded-xl shadow-5xl text-center" style="background-color:#0c2749;">
+                <h3 class="text-lg text-white font-semibold">Évaluation gratuite</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Guides-->
+  <section class="relative pt-32 pb-24 bg-white overflow-hidden" id="guides" style="background-color: #0c2749;">
+    <img class="absolute bottom-0 left-1/2 transform -translate-x-1/2" src="./flaro-assets/images/newsletter/gradient.svg" alt="">
+
+    <div class="relative z-10 container px-4 mx-auto">
+      <div class="text-center max-w-2xl mx-auto">
+
+        <!-- Label -->
+        <p class="mb-5 text-sm text-indigo-600 font-semibold uppercase tracking-px" style="color: #F7F5EE;">Guides</p>
+
+        <!-- Title -->
+        <h2 class="mb-14 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight" style="color: #F7F5EE;">
+          Téléchargez mes guides gratuitement !
+        </h2>
+
+        <!-- Buttons -->
+        <div class="flex flex-col space-y-6 md:max-w-md mx-auto">
+
+          <!-- Bouton principal -->
+          <a
+            href="assets/pdf/guide-vendeur.pdf"
+            target="_blank"
+            rel="noopener"
+            class="py-4 px-6 w-full inline-flex items-center justify-center gap-4
+                   font-semibold rounded-xl border-2 border-indigo-600
+                   transition ease-in-out duration-200"
+            style="color:#F7F5EE; background-color:#AA1120;">
+            Guide du vendeur
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+          </a>
+
+          <!-- Bouton light (FIXED: no nested button) -->
+          <a
+            href="./assets/pdf/guide-acheteur.pdf"
+            target="_blank"
+            rel="noopener"
+            class="py-4 px-6 w-full inline-flex items-center justify-center gap-4
+                   font-semibold rounded-xl border-2 border-indigo-600
+                   hover:bg-indigo-50 transition ease-in-out duration-200"
+            style="color:#F7F5EE;">
+            Guide de l'acheteur
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--à propos-->
+  <section class="py-32 bg-white overflow-hidden" id="about" style="background-color: #F7F5EE;">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap max-w-7xl mx-auto -m-8">
+        <div class="w-full md:w-1/2 p-8">
+          <div class="md:max-w-md">
+            <h2 class="mb-8 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">À propos</h2>
+            <p class="text-lg text-gray-600 font-medium leading-normal">
+              Courtier immobilier résidentiel, j’accompagne mes clients avec rigueur, transparence et engagement dans leurs projets d’achat, de vente ou d’investissement immobilier à Québec et dans les environs.
+              <br><br>
+              Chaque projet immobilier est unique. C’est pourquoi je prends le temps de bien comprendre votre situation, vos objectifs et vos priorités afin de vous offrir un accompagnement réellement adapté à vos besoins.
+              <br><br>
+              Mon approche repose sur la disponibilité, la communication et la confiance. Je vous guide à chaque étape du processus, en vous fournissant des conseils clairs et des informations pertinentes pour vous permettre de prendre des décisions éclairées.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 p-8">
+          <div class="relative max-w-md mx-auto overflow-hidden transform hover:-translate-y-4 transition ease-in-out duration-1000 rounded-2xl">
+            <img class="object-cover h-full w-full" src="flaro-assets/images/vanessaabout.webp" alt="">
+            <div class="absolute bottom-0 p-6 flex flex-col justify-end h-full">
+              <div class="flex flex-wrap items-end overflow-y-auto -m-3">
+                <div class="w-full p-3"></div>
+
+                <div class="w-full p-3">
+                  <div class="p-7 bg-white bg-opacity-20 rounded-xl" style="backdrop-filter: blur(20px);">
+                    <div class="flex flex-wrap -m-2">
+                      <div class="w-auto p-2">
+                        <p class="text-lg text-white font-semibold leading-normal">
+                          Toujours disponible pour vous accompagner, répondre à vos questions et vous guider à chaque étape.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-                <!--CTA--> 
-      <section class="relative pt-24 pb-28 bg-white overflow-hidden" id="cta" style="background-color: #F7F5EE;">
-        <img class="absolute top-0 left-1/2 transform -translate-x-1/2" src="flaro-assets/images/cta/gradient4.svg" alt="">
-        <div class="relative z-10 container px-4 mx-auto">
-          <div class="flex flex-wrap -m-8">
-            
-            <div class="w-full md:flex-1 p-8">
-              <div class="md:max-w-2xl mx-auto text-center">
-                <h2 class="mb-10 text-6xl md:text-7xl font-bold font-heading text-center tracking-px-n leading-tight" style="color: #0c2749;">Prêt à lancer votre projet immobilier ?</h2> <br>
-                <div class="mb-12 md:inline-block">
-                  <button class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" style="background-color: #AA1120;" type="button">Contactez-moi !</button>
-                </div>
-                <div class="md:max-w-sm mx-auto">
-                  <div class="flex flex-wrap -m-2">
-                    
-                    
-                  </div>
-                </div>
               </div>
             </div>
-            
           </div>
         </div>
-      </section>
 
-
-
-<!--avantage--> 
-<section class="py-32 bg-white overflow-hidden" id="avantage" style="background-color: #0c2749;">
-  <div class="container px-4 mx-auto">
-    <div class="flex flex-wrap items-center -m-8">
-      <div class="w-full md:w-1/2 p-8">
-        <h2 class="mb-9 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none" style="color: #F7F5EE;">
-          L’avantage RE/MAX
-        </h2>
-
-        <p class="mb-10 text-lg text-gray-900 font-medium leading-relaxed md:max-w-md" style="color: #F7F5EE;">
-          Choisir RE/MAX, c’est s’appuyer sur la marque immobilière la plus visible et la plus performante au Québec.
-          Avec plus de la moitié du trafic web immobilier, RE/MAX offre à votre propriété une visibilité inégalée.
-        </p>
-
-        <div class="mb-11 md:inline-block rounded-xl shadow-4xl">
-          <button class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" type="button" style="background-color: #AA1120;">
-            Évaluation gratuite
-          </button>
-        </div>
-
-        <div class="flex flex-wrap -m-2">
-          <div class="w-auto p-2">
-            
-          </div>
-          <div class="flex-1 p-2">
-            <p class="text-gray-600 font-medium md:max-w-sm" style="color: #F7F5EE;">
-              Plus de 42 % des propriétés vendues au Québec le sont par des courtiers RE/MAX,
-              faisant de RE/MAX le leader incontesté des transactions immobilières dans la province.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-full md:w-1/2 px-24 py-8 md:px-8">
-        <img class="w-full max-w-xl transform hover:-translate-x-16 transition ease-in-out duration-1000 rounded-2xl" src="flaro-assets/images/features/feature2.webp" alt="">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<!--Contact--> 
-<section class="relative pt-28 pb-36 bg-blueGray-100 overflow-hidden" id="contact" style="background-color: #F7F5EE;">
-  <div class="relative z-10 container px-4 mx-auto">
-    <p class="mb-6 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px" style="color: #0c2749;">
-      Contact
-    </p>
-
-    <h2 class="mb-14 text-6xl md:text-7xl text-center font-bold font-heading tracking-px-n leading-tight md:max-w-xl mx-auto" style="color: #0c2749;">
-      Discutons de votre projet immobilier
-    </h2>
-
-    <form
-      action="https://formspree.io/f/XXXXXXX"
-      method="POST"
-      class="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-4xl shadow-12xl"
-      style="backdrop-filter: blur(5px);"
-    >
-
-      <h3 class="mb-8 text-xl text-center font-semibold leading-normal md:max-w-sm mx-auto" >
-        Laissez-moi un message et je vous reviens rapidement.
-      </h3>
-
-      <!-- Nom -->
-      <label class="block mb-4">
-        <input
-          class="px-4 py-3 w-full text-gray-500 font-medium placeholder-gray-500 bg-white bg-opacity-50 outline-none border border-blueGray-200 rounded-lg focus:ring focus:ring-indigo-300"
-          type="text"
-          name="name"
-          placeholder="Nom complet"
-          required
-        >
-      </label>
-
-      <!-- Courriel -->
-      <label class="block mb-4">
-        <input
-          class="px-4 py-3 w-full text-gray-500 font-medium placeholder-gray-500 bg-white bg-opacity-50 outline-none border border-blueGray-200 rounded-lg focus:ring focus:ring-indigo-300"
-          type="email"
-          name="email"
-          placeholder="Adresse courriel"
-          required
-        >
-      </label>
-
-      <!-- Message -->
-      <label class="block mb-4">
-        <textarea
-          class="p-4 w-full h-48 font-medium text-gray-500 placeholder-gray-500 bg-white bg-opacity-50 outline-none border border-blueGray-200 resize-none rounded-lg focus:ring focus:ring-indigo-300"
-          name="message"
-          placeholder="Votre message"
-          required
-        ></textarea>
-      </label>
-
-      <!-- Anti-spam invisible -->
-      <input type="text" name="_gotcha" style="display:none">
-
-      <!-- Bouton -->
-      <button
-        class="py-4 px-9 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200"
-        type="submit"
-        style="background-color: #AA1120;"
-      >
-        Envoyer le message
-      </button>
-
-    </form>
-  </div>
-
-  <img
-    class="absolute bottom-0 w-full object-cover transform hover:translate-y-4 transition ease-in-out duration-1000"
-    style="height: 502px;"
-    src="flaro-assets/images/contact/bannerbottom.webp"
-    alt=""
-  >
-</section>
-
-
-
-
-<!--footer--> 
-<section class="relative pt-24 bg-black overflow-hidden" id="footer">
-  <img class="absolute left-1/2 bottom-0 h-full transform -translate-x-1/2" src="flaro-assets/images/footers/gradient.svg" alt="">
-  <div class="relative z-10 container px-4 mx-auto">
-    <div class="pb-24 border-b border-gray-900">
+  <!--CTA-->
+  <section class="relative pt-24 pb-28 bg-white overflow-hidden" id="cta" style="background-color: #F7F5EE;">
+    <img class="absolute top-0 left-1/2 transform -translate-x-1/2" src="flaro-assets/images/cta/gradient4.svg" alt="">
+    <div class="relative z-10 container px-4 mx-auto">
       <div class="flex flex-wrap -m-8">
+        <div class="w-full md:flex-1 p-8">
+          <div class="md:max-w-2xl mx-auto text-center">
+            <h2 class="mb-10 text-6xl md:text-7xl font-bold font-heading text-center tracking-px-n leading-tight" style="color: #0c2749;">Prêt à lancer votre projet immobilier ?</h2>
+            <br>
+            <div class="mb-12 md:inline-block">
+              <!-- FIXED: button -> link -->
+              <a href="#contact" class="inline-block py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" style="background-color: #AA1120;">
+                Contactez-moi !
+              </a>
+            </div>
+            <div class="md:max-w-sm mx-auto">
+              <div class="flex flex-wrap -m-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Brand / About -->
-        <div class="w-full sm:w-1/2 lg:w-6/12 p-8">
-          <div class="lg:max-w-sm">
-            <a class="mb-8 inline-block" href="#">
-              <img class="h-8" src="flaro-assets/images/remax.png" alt="Vanessa Lemieux courtière immobilière RE/MAX Québec">
+  <!--avantage-->
+  <section class="py-32 bg-white overflow-hidden" id="avantage" style="background-color: #0c2749;">
+    <div class="container px-4 mx-auto">
+      <div class="flex flex-wrap items-center -m-8">
+        <div class="w-full md:w-1/2 p-8">
+          <h2 class="mb-9 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none" style="color: #F7F5EE;">L’avantage RE/MAX</h2>
+
+          <p class="mb-10 text-lg text-gray-900 font-medium leading-relaxed md:max-w-md" style="color: #F7F5EE;">
+            Choisir RE/MAX, c’est s’appuyer sur la marque immobilière la plus visible et la plus performante au Québec.
+            Avec plus de la moitié du trafic web immobilier, RE/MAX offre à votre propriété une visibilité inégalée.
+          </p>
+
+          <div class="mb-11 md:inline-block rounded-xl shadow-4xl">
+            <!-- FIXED: button -> link -->
+            <a href="#contact" class="inline-block py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" style="background-color: #AA1120;">
+              Évaluation gratuite
             </a>
+          </div>
 
-            <p class="mb-10 text-gray-400 font-medium leading-relaxed md:max-w-xs">
-              Vanessa Lemieux, courtière immobilière résidentielle affiliée à RE/MAX,
-              accompagne acheteurs et vendeurs à Québec, Lévis et dans les environs
-              avec une approche humaine, stratégique et orientée résultats.
-            </p>
-
-            <!-- Coordinates -->
-            <div class="mb-10 text-gray-300 text-sm font-medium leading-relaxed">
-              <p>Québec et environs</p>
-              <p>
-              <a href="tel:+14184739942" class="hover:text-white"> (418) 473-9942</a>
-              </p>
-              <p>
-              <a href="mailto:vanessa.lemieux@remax-quebec.com" class="hover:text-white">
-                  vanessa.lemieux@remax-quebec.com
-                </a>
+          <div class="flex flex-wrap -m-2">
+            <div class="w-auto p-2"></div>
+            <div class="flex-1 p-2">
+              <p class="text-gray-600 font-medium md:max-w-sm" style="color: #F7F5EE;">
+                Plus de 42 % des propriétés vendues au Québec le sont par des courtiers RE/MAX,
+                faisant de RE/MAX le leader incontesté des transactions immobilières dans la province.
               </p>
             </div>
-
-            <!-- Social -->
-            <div class="flex flex-wrap -m-1.5">
-              <div class="w-auto p-1.5">
-                <a href="https://www.facebook.com/vanessa.lemieux.7359" aria-label="Facebook Vanessa Lemieux">
-                  <div class="flex items-center justify-center w-9 h-9 border border-gray-800 hover:border-gray-900 rounded-full">
-                    <!-- Facebook icon -->
-                    <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.81589 5.30371L5.81589 3.80371C5.81589 3.15371 5.97379 2.80371 7.07905 2.80371H8.44747V0.303711L6.34221 0.303711C3.71063 0.303711 2.658 1.95371 2.658 3.80371V5.30371H0.552734L0.552734 7.80371H2.658L2.658 15.3037H5.81589L5.81589 7.80371H8.13168L8.44747 5.30371H5.81589Z" fill="#D4D4D8"></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-
-              <div class="w-auto p-1.5">
-                
-              </div>
-            </div>
-
           </div>
         </div>
 
-        <!-- Navigation -->
-        <div class="w-full sm:w-1/2 lg:w-2/12 p-8">
-          <h3 class="mb-8 text-sm text-gray-600 uppercase font-semibold leading-normal tracking-px">
-            Navigation
-          </h3>
-          <ul>
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#about">À propos</a></li>
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Services immobiliers</a></li>
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#avantage">L’avantage RE/MAX</a></li>
-            <li><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#contact">Contact</a></li>
-          </ul>
+        <div class="w-full md:w-1/2 px-24 py-8 md:px-8">
+          <img class="w-full max-w-xl transform hover:-translate-x-16 transition ease-in-out duration-1000 rounded-2xl" src="flaro-assets/images/features/feature2.webp" alt="">
         </div>
-
-        <!-- Services SEO -->
-        <div class="w-full sm:w-1/2 lg:w-2/12 p-8">
-          <h3 class="mb-8 text-sm text-gray-600 uppercase font-semibold leading-normal tracking-px">
-            Services à Québec et Lévis
-          </h3>
-          <ul>
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Vendre une maison à Québec et Lévis</a></li>
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Acheter une propriété à Québec et Lévis</a></li>
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Évaluation immobilière Québec et Lévis</a></li>
-     
-          </ul>
-        </div>
-
-        <!-- Legal -->
-        <div class="w-full sm:w-1/2 lg:w-2/12 p-8">
-          <h3 class="mb-8 text-sm text-gray-600 uppercase font-semibold leading-normal tracking-px">
-            Informations légales
-          </h3>
-          <ul>
-            
-            <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#">Politique de confidentialité</a></li>
-            
-          </ul>
-        </div>
-
       </div>
     </div>
+  </section>
 
-    <!-- Legal RE/MAX -->
-    <p class="py-5 text-xs text-gray-400 font-medium text-center leading-relaxed">
-      © 2025 Vanessa Lemieux, courtière immobilière résidentielle affiliée à RE/MAX.
-      Conception web par <a href="https://roymarketing.ca/">Roy Marketing.</a>
-    </p>
-  </div>
-</section>
+  <!--Contact-->
+  <section class="relative pt-28 pb-36 bg-blueGray-100 overflow-hidden" id="contact" style="background-color: #F7F5EE;">
+    <div class="relative z-10 container px-4 mx-auto">
+      <p class="mb-6 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px" style="color: #0c2749;">Contact</p>
 
+      <h2 class="mb-14 text-6xl md:text-7xl text-center font-bold font-heading tracking-px-n leading-tight md:max-w-xl mx-auto" style="color: #0c2749;">
+        Discutons de votre projet immobilier
+      </h2>
 
+      <form
+        action="https://formspree.io/f/XXXXXXX"
+        method="POST"
+        class="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-4xl shadow-12xl"
+        style="backdrop-filter: blur(5px);">
 
+        <h3 class="mb-8 text-xl text-center font-semibold leading-normal md:max-w-sm mx-auto">
+          Laissez-moi un message et je vous reviens rapidement.
+        </h3>
+
+        <!-- Nom -->
+        <label class="block mb-4">
+          <input
+            class="px-4 py-3 w-full text-gray-500 font-medium placeholder-gray-500 bg-white bg-opacity-50 outline-none border border-blueGray-200 rounded-lg focus:ring focus:ring-indigo-300"
+            type="text"
+            name="name"
+            placeholder="Nom complet"
+            required>
+        </label>
+
+        <!-- Courriel -->
+        <label class="block mb-4">
+          <input
+            class="px-4 py-3 w-full text-gray-500 font-medium placeholder-gray-500 bg-white bg-opacity-50 outline-none border border-blueGray-200 rounded-lg focus:ring focus:ring-indigo-300"
+            type="email"
+            name="email"
+            placeholder="Adresse courriel"
+            required>
+        </label>
+
+        <!-- Message -->
+        <label class="block mb-4">
+          <textarea
+            class="p-4 w-full h-48 font-medium text-gray-500 placeholder-gray-500 bg-white bg-opacity-50 outline-none border border-blueGray-200 resize-none rounded-lg focus:ring focus:ring-indigo-300"
+            name="message"
+            placeholder="Votre message"
+            required></textarea>
+        </label>
+
+        <!-- Anti-spam invisible -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <!-- Bouton (submit stays a button) -->
+        <button
+          class="py-4 px-9 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200"
+          type="submit"
+          style="background-color: #AA1120;">
+          Envoyer le message
+        </button>
+
+      </form>
+    </div>
+
+    <img
+      class="absolute bottom-0 w-full object-cover transform hover:translate-y-4 transition ease-in-out duration-1000"
+      style="height: 502px;"
+      src="flaro-assets/images/contact/bannerbottom.webp"
+      alt="">
+  </section>
+
+  <!--footer-->
+  <section class="relative pt-24 bg-black overflow-hidden" id="footer">
+    <img class="absolute left-1/2 bottom-0 h-full transform -translate-x-1/2" src="flaro-assets/images/footers/gradient.svg" alt="">
+    <div class="relative z-10 container px-4 mx-auto">
+      <div class="pb-24 border-b border-gray-900">
+        <div class="flex flex-wrap -m-8">
+
+          <!-- Brand / About -->
+          <div class="w-full sm:w-1/2 lg:w-6/12 p-8">
+            <div class="lg:max-w-sm">
+              <a class="mb-8 inline-block" href="#">
+                <img class="h-8" src="flaro-assets/images/remax.png" alt="Vanessa Lemieux courtière immobilière RE/MAX Québec">
+              </a>
+
+              <p class="mb-10 text-gray-400 font-medium leading-relaxed md:max-w-xs">
+                Vanessa Lemieux, courtière immobilière résidentielle affiliée à RE/MAX,
+                accompagne acheteurs et vendeurs à Québec, Lévis et dans les environs
+                avec une approche humaine, stratégique et orientée résultats.
+              </p>
+
+              <!-- Coordinates -->
+              <div class="mb-10 text-gray-300 text-sm font-medium leading-relaxed">
+                <p>Québec et environs</p>
+                <p>
+                  <a href="tel:+14184739942" class="hover:text-white">(418) 473-9942</a>
+                </p>
+                <p>
+                  <a href="mailto:vanessa.lemieux@remax-quebec.com" class="hover:text-white">vanessa.lemieux@remax-quebec.com</a>
+                </p>
+              </div>
+
+              <!-- Social -->
+              <div class="flex flex-wrap -m-1.5">
+                <div class="w-auto p-1.5">
+                  <a href="https://www.facebook.com/vanessa.lemieux.7359" aria-label="Facebook Vanessa Lemieux">
+                    <div class="flex items-center justify-center w-9 h-9 border border-gray-800 hover:border-gray-900 rounded-full">
+                      <!-- Facebook icon -->
+                      <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.81589 5.30371L5.81589 3.80371C5.81589 3.15371 5.97379 2.80371 7.07905 2.80371H8.44747V0.303711L6.34221 0.303711C3.71063 0.303711 2.658 1.95371 2.658 3.80371V5.30371H0.552734L0.552734 7.80371H2.658L2.658 15.3037H5.81589L5.81589 7.80371H8.13168L8.44747 5.30371H5.81589Z" fill="#D4D4D8"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="w-auto p-1.5"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="w-full sm:w-1/2 lg:w-2/12 p-8">
+            <h3 class="mb-8 text-sm text-gray-600 uppercase font-semibold leading-normal tracking-px">Navigation</h3>
+            <ul>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#about">À propos</a></li>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Services immobiliers</a></li>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#avantage">L’avantage RE/MAX</a></li>
+              <li><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services SEO -->
+          <div class="w-full sm:w-1/2 lg:w-2/12 p-8">
+            <h3 class="mb-8 text-sm text-gray-600 uppercase font-semibold leading-normal tracking-px">Services à Québec et Lévis</h3>
+            <ul>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Vendre une maison à Québec et Lévis</a></li>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Acheter une propriété à Québec et Lévis</a></li>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#services">Évaluation immobilière Québec et Lévis</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="w-full sm:w-1/2 lg:w-2/12 p-8">
+            <h3 class="mb-8 text-sm text-gray-600 uppercase font-semibold leading-normal tracking-px">Informations légales</h3>
+            <ul>
+              <li class="mb-5"><a class="text-white hover:text-gray-200 font-medium leading-relaxed" href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Legal RE/MAX -->
+      <p class="py-5 text-xs text-gray-400 font-medium text-center leading-relaxed">
+        © 2025 Vanessa Lemieux, courtière immobilière résidentielle affiliée à RE/MAX.
+        Conception web par <a href="https://roymarketing.ca/">Roy Marketing.</a>
+      </p>
+    </div>
+  </section>
+
+</div>
 </body>
 </html>
-
